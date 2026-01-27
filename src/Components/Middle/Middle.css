@@ -1,0 +1,195 @@
+.middle {
+    background-color: #245852;
+    padding: 100px 0;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.middle-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
+}
+
+.middle-texts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.middle-text {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.middle-info {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+.video-section {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.video-wrapper-inner {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.orange-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(244, 167, 72, 0.3) 0%, transparent 70%);
+    filter: blur(60px);
+    z-index: 1;
+}
+
+.video-wrapper {
+    width: 100%;
+    height: 450px;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #000;
+    z-index: 2;
+    border: 1px solid rgba(244, 167, 72, 0.2);
+}
+
+.main-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(244, 167, 72, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 18px solid rgba(244, 167, 72, 1);
+    margin-left: 6px;
+}
+
+.cssbuttons-io-button {
+ width: 240px !important;
+height: 65px !important;
+    border-radius: 4px;
+    background: rgba(1, 153, 109, 1);
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em rgba(1, 153, 109, 1);
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+letter-spacing: 0px;
+
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em rgba(1, 153, 109, 1);
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: rgba(1, 153, 109, 1);
+}
+
+@media (max-width: 1024px) {
+    .middle-container {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .middle-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .middle-texts {
+        align-items: center;
+        text-align: center;
+    }
+    .middle-button {
+        align-self: center;
+    }
+    .video-wrapper {
+        height: 350px;
+    }
+    .desktop-br {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .middle-text {
+        font-size: 32px;
+    }
+    .middle-info {
+        font-size: 18px;
+    }
+    .video-wrapper {
+        height: 250px;
+    }
+}

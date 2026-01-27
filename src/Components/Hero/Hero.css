@@ -1,0 +1,142 @@
+.hero {
+    padding: 100px 0;
+    width: 100%;
+}
+
+.hero-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.hero-topleft-info {
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(66, 66, 66, 1);
+}
+
+.hero-topleft-text {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: rgba(1, 153, 109, 1);
+}
+
+.hero-topright-text {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.5;
+    color: rgba(66, 66, 66, 1);
+    position: relative;
+    top: 80px;
+    max-width: 500px;
+}
+
+.hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.hero-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero-card-offset {
+    margin-top: 200px; 
+}
+
+.hero-card-number img {
+    position: relative;
+    top: 5px;
+    left: 30px;
+}
+
+.hero-card-title {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin-top: -35px; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.hero-card-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #424242;
+    margin-bottom: 30px;
+    min-height: 100px; 
+}
+
+.hero-img-container {
+    position: relative;
+    width: 100%;
+}
+
+.hero-card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 1200px) {
+    
+    .hero-topleft-text {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-top {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .hero-topright-text {
+        top: 0;
+        max-width: 100%;
+    }
+    .hero-card-offset {
+        margin-top: 100px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .hero-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+    .hero-card {
+        width: 100%;
+        max-width: 450px;
+    }
+    .hero-card-offset {
+        margin-top: 0;
+    }
+    .desktop-br {
+        display: none;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .hero-topleft-text {
+        font-size: 32px;
+    }
+    .hero-card-title {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+}

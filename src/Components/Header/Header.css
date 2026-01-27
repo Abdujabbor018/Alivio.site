@@ -1,0 +1,55 @@
+.header {
+    background-image: url('./img/BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 85vh;
+    justify-content: flex-start; 
+    margin-top: 80px;
+    position: relative;
+}
+
+
+.header-container {
+    width: 100%;
+    text-align: left !important; 
+    display: block; 
+    position: relative;
+    top: 150px;
+}
+
+.header-text {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(38px, 8vw, 65px);
+    line-height: 1.1;
+    color: rgba(1, 153, 109, 1);
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.header-info {
+    font-weight: 400;
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 1.6;
+    color: rgba(72, 72, 72, 1);
+    margin-bottom: 40px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.header-button {
+    width: clamp(190px, 20vw, 227px);
+    height: 65px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(1, 153, 109, 1);
+    font-weight: 400;
+    font-size: 20px;
+    border: 3px solid rgba(1, 153, 109, 1);
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: block;
+}
+
