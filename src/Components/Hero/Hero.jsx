@@ -10,7 +10,7 @@ import site from './img/Group 55.png'
 
 const Hero = () => {
     return (
-        <div className="hero">
+        <div className="hero" id='Hero'>
             <div className="container">
                 <div className="hero-container">
                     <div className="hero-top">

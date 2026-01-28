@@ -10,13 +10,13 @@ const Footer = () => {
                 <ul className="footer-list">
                     <li className='footer-item'><img src={FooterLogo} alt="" className="footer-logo" /></li>
                     <li className="footer-item">
-                        <a href="" className="footer-link">Why Alivio</a>
+                        <a href="#Middle" className="footer-link">Why Alivio</a>
                     </li>
                     <li className="footer-item">
-                        <a href="" className="footer-link">Solutions</a>
+                        <a href="#Hero" className="footer-link">Solutions</a>
                     </li>
                     <li className="footer-item">
-                        <a href="" className="footer-link">Community</a>
+                        <a href="#Section" className="footer-link">Community</a>
                     </li>
                     <li className="footer-item">
                         <a href="" className="footer-link">Pricing</a>

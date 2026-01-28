@@ -18,7 +18,7 @@ const Middle = () => {
     };
 
     return (
-        <div className="middle">
+        <div className="middle" id='Middle'>
             <div className="container">
                 <div className="middle-container">
                     <div className="middle-texts">

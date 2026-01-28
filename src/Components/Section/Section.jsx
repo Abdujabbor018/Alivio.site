@@ -5,7 +5,7 @@ import Card from './img/Card.png'
 const Section = () => {
     return (
         <>
-            <div className="section">
+            <div className="section" id='Section'>
                 <div className="container">
                     <div className="section-container">
                         <div className="section-left">
